@@ -95,10 +95,9 @@ namespace crow // NOTE: Already documented in "crow/app.h"
         // +-------------------------------- - - - - - - - - - - - - - - - +
         // AI FIX START
 // AI FIX START
-// :                     Payload Data continued ...                :
-// + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
-
-// |                     Payload Data continued ...                |
+// AI FIX START
+// No secret or sensitive data should be hardcoded here
+// AI FIX END
 // AI FIX START
 // AI FIX START
 const apiKey = process.env.API_KEY; // using environment variable to store API key, ensure it is set
