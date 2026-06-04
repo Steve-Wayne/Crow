@@ -94,9 +94,13 @@ namespace crow // NOTE: Already documented in "crow/app.h"
         // | Masking-key (continued)       |          Payload Data         |
         // +-------------------------------- - - - - - - - - - - - - - - - +
         // AI FIX START
+// AI FIX START
 // :                     Payload Data continued ...                :
 // + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+
 // |                     Payload Data continued ...                |
+const apiKey = process.env.API_KEY;
+// AI FIX END
 
 // +---------------------------------------------------------------+
 // No secret API key is stored here
