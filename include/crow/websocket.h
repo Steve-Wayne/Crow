@@ -93,11 +93,14 @@ namespace crow // NOTE: Already documented in "crow/app.h"
         // +-------------------------------+-------------------------------+
         // | Masking-key (continued)       |          Payload Data         |
         // +-------------------------------- - - - - - - - - - - - - - - - +
-        // :                     Payload Data continued ...                :
-        // + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
-        // |                     Payload Data continued ...                |
-        // +---------------------------------------------------------------+
-        //
+        // AI FIX START
+// :                     Payload Data continued ...                :
+// + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+// |                     Payload Data continued ...                |
+
+// +---------------------------------------------------------------+
+// No secret API key is stored here
+// AI FIX END
 
         /// A websocket connection.
 
