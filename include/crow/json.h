@@ -1845,7 +1845,9 @@ namespace crow // NOTE: Already documented in "crow/app.h"
             inline void dump_indentation_part(std::string& out, const int indent, const char separator, const int indent_level) const
             {
                 out.push_back('\n');
-                out.append(indent_level * indent, separator);
+                // AI FIX START
+out.append(static_cast<size_type>(indent_level) * static_cast<size_type>(indent), separator);
+// AI FIX END
             }
 
 
